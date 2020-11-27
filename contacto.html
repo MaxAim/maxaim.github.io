@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tienda ⬤ Ganjin - Contacto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header class="menu__desktop">
+            <h1>Tienda <b>⬤</b>Ganjin</h1>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="envios.html">Envios</a>
+            <a href="info.html">Conocenos</a>
+            <a class="menu__off">Contacto</a>
+        </header>
+        <header class="menu__mobile">
+            <h1>Tienda <b>⬤</b>Ganjin</h1>
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">三</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a href="index.html">Index</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="envios.html">Envios</a>
+                    <a href="info.html">Conocenos</a>
+                </div>
+                </div>
+              </div>
+        </header>
+    <main class="animate__animated animate__fadeIn">
+        <form>
+            <fieldset class="background">
+                <legend>Informacion personal</legend>
+                <p>Nombre:</p><input type="text" name="contacto" class="main__input" placeholder="Nombre">
+                <p>Direccion:</p><input type="text" class="main__input" placeholder="Direccion">
+                <p>Telefono:</p><input type="text" class="main__input" placeholder="Telefono">
+                <p>Informacion extra:</p><textarea name="extra" rows="20" class="main__input" placeholder="Informacion extra"></textarea>
+            </fieldset>
+            <fieldset class="background full-width">
+                <legend>Forma de pago</legend>
+                <select name="metododepago">
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="Paypal">Paypal</option>
+                </select>
+            </fieldset>
+            <fieldset class="background full-width">
+                <legend>Confirmar</legend>
+                <p>Acepto las condicones</p><input type="checkbox" value="0">
+                <p>Quiero recibir el newsletter</p><input type="checkbox" value="1">
+                <input type="reset" value="Limpiar" class="main__input main__input--btn">
+                <input type="submit" value="  Enviar   " class="main__input main__input--btn">
+            </fieldset>
+        </form>
+        </div>
+        <footer class="background">
+            <h2>Info del sitio</h2>
+            <nav>Facebook</nav>
+            <nav>Instagram</nav>
+            <nav>Youtube</nav>
+            <nav>Twitter</nav>
+            <p id="yo">Cañibano Facundo</p>
+        </footer>
+    </main>
+</body>
+</html>
