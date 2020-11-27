@@ -61,7 +61,8 @@ h1 {
 
 a {
   color: black;
-  padding: 2%; }
+  padding: 2% 0% 2% 3%;
+  flex-grow: 1; }
 
 legend, h1, h2, p, .white, nav {
   color: white; }
