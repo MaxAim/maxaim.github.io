@@ -46,7 +46,6 @@ footer {
   width: 97%;
   top: 0;
   left: 1.5%;
-  overflow: hidden;
   border: black solid thick;
   background: grey;
   z-index: 10; }
@@ -101,15 +100,13 @@ fieldset p {
     .table-dark th img {
       width: 100%; }
 
-@media only screen and (max-width: 1024px) {
-  .menu__desktop {
+@media only screen and (max-width: 1040px) {
+  .menu__desktop, td p, .main__ofertas {
     display: none; }
   body {
-    margin-top: 15%;
     margin-left: 2%;
-    max-width: 98%; }
-  .main__ofertas {
-    display: none; }
+    margin-top: 60px;
+    width: 98%; }
   .main__masVendido {
     flex-direction: column; }
   h1 {
@@ -130,20 +127,24 @@ fieldset p {
     font-family: "Permanent Marker";
     z-index: 10;
     width: 94%;
-    height: 10%; }
+    height: 100px;
+    border-radius: 1%; }
     .menu__mobile a {
       font-size: 1.6rem;
       color: white;
       position: relative;
       float: left;
       font-family: "Poppins"; }
+    .menu__mobile a {
+      flex-grow: 1; }
   .main__input {
     width: 90%; }
-  td p {
-    display: none; }
   input {
     display: block; }
   .table-dark {
     position: relative;
-    right: 10%;
-    width: 98%; } }
+    width: 98%; }
+    .table-dark img {
+      width: 30%; }
+    .table-dark b {
+      font-size: 3vw; } }
