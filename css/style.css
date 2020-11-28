@@ -107,7 +107,7 @@ iframe {
   .menu__desktop, td p, .main__ofertas {
     display: none; }
   main {
-    margin-top: 25px; }
+    padding-top: 20px; }
   .main__masVendido {
     flex-direction: column; }
   h1 {
