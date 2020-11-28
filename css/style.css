@@ -110,6 +110,8 @@ iframe {
 @media only screen and (max-width: 1039px) {
   .menu__desktop, .main__ofertas, .mobile__off {
     display: none; }
+  main {
+    margin-top: 50px; }
   .image-hero-area {
     position: fixed;
     right: 0;
