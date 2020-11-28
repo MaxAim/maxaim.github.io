@@ -101,8 +101,8 @@ fieldset p {
 @media only screen and (max-width: 1040px) {
   .menu__desktop, td p, .main__ofertas {
     display: none; }
-  body {
-    width: 100%; }
+  main {
+    margin-top: 20px; }
   .main__masVendido {
     flex-direction: column; }
   h1 {
@@ -138,8 +138,8 @@ fieldset p {
     display: block; }
   .table-dark {
     position: relative;
-    width: 98%; }
+    width: 100%; }
     .table-dark img {
-      width: 40%; }
+      width: 50%; }
     .table-dark b {
       font-size: 3vw; } }
