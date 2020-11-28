@@ -3,7 +3,7 @@
     <head>
         <title>Tienda ⬤ Ganjin - Contacto</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -33,31 +33,32 @@
                 </div>
               </div>
         </header>
-    <main class="animate__animated animate__fadeIn">
-        <form>
-            <fieldset class="background">
-                <legend>Informacion personal</legend>
-                <p>Nombre:</p><input type="text" name="contacto" class="main__input" placeholder="Nombre">
-                <p>Direccion:</p><input type="text" class="main__input" placeholder="Direccion">
-                <p>Telefono:</p><input type="text" class="main__input" placeholder="Telefono">
-                <p>Informacion extra:</p><textarea name="extra" rows="20" class="main__input" placeholder="Informacion extra"></textarea>
-            </fieldset>
-            <fieldset class="background full-width">
-                <legend>Forma de pago</legend>
-                <select name="metododepago">
-                    <option value="tarjeta">Tarjeta</option>
-                    <option value="Paypal">Paypal</option>
-                </select>
-            </fieldset>
-            <fieldset class="background full-width">
-                <legend>Confirmar</legend>
-                <p>Acepto las condicones</p><input type="checkbox" value="0">
-                <p>Quiero recibir el newsletter</p><input type="checkbox" value="1">
-                <input type="reset" value="Limpiar" class="main__input main__input--btn">
-                <input type="submit" value="  Enviar   " class="main__input main__input--btn">
-            </fieldset>
-        </form>
-        </div>
+        <div class=”bg__fix”></div>
+        <main class="animate__animated animate__fadeIn">
+            <form>
+                <fieldset class="background">
+                    <legend>Informacion personal</legend>
+                    <p>Nombre:</p><input type="text" name="contacto" class="main__input" placeholder="Nombre">
+                    <p>Direccion:</p><input type="text" class="main__input" placeholder="Direccion">
+                    <p>Telefono:</p><input type="text" class="main__input" placeholder="Telefono">
+                    <p>Informacion extra:</p><textarea name="extra" rows="20" class="main__input" placeholder="Informacion extra"></textarea>
+                </fieldset>
+                <fieldset class="background full-width">
+                    <legend>Forma de pago</legend>
+                    <select name="metododepago">
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="Paypal">Paypal</option>
+                    </select>
+                </fieldset>
+                <fieldset class="background full-width">
+                    <legend>Confirmar</legend>
+                    <p>Acepto las condicones</p><input type="checkbox" value="0">
+                    <p>Quiero recibir el newsletter</p><input type="checkbox" value="1">
+                    <input type="reset" value="Limpiar" class="main__input main__input--btn">
+                    <input type="submit" value="  Enviar   " class="main__input main__input--btn">
+                </fieldset>
+            </form>
+        </main>
         <footer class="background">
             <h2>Info del sitio</h2>
             <nav>Facebook</nav>
