@@ -98,11 +98,16 @@ fieldset p {
     .table-dark th img {
       width: 100%; }
 
+iframe {
+  margin: 20px;
+  height: 360px;
+  width: auto; }
+
 @media only screen and (max-width: 1040px) {
   .menu__desktop, td p, .main__ofertas {
     display: none; }
   main {
-    margin-top: 20px; }
+    margin-top: 45px; }
   .main__masVendido {
     flex-direction: column; }
   h1 {
@@ -138,7 +143,8 @@ fieldset p {
     display: block; }
   .table-dark {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    left: 1%; }
     .table-dark img {
       width: 50%; }
     .table-dark b {
