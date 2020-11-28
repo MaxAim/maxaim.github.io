@@ -103,8 +103,11 @@ iframe {
   height: 360px;
   width: auto; }
 
+.mobile__on {
+  display: none; }
+
 @media only screen and (max-width: 1040px) {
-  .menu__desktop, td p, .main__ofertas {
+  .menu__desktop, .main__ofertas, .mobile__off {
     display: none; }
   main {
     margin-top: 50px; }
@@ -143,13 +146,13 @@ iframe {
     width: 90%; }
   input {
     display: block; }
-  .dropdown-menu.show {
+  .dropdown-menu.show, .mobile__on {
     display: grid; }
   .table-dark {
     position: relative;
     width: 95%;
     right: 0; }
     .table-dark img {
-      width: 50%; }
+      width: 400px; }
     .table-dark b {
       font-size: 3vw; } }
