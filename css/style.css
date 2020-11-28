@@ -125,8 +125,6 @@ iframe {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-  main {
-    margin-top: 50px; }
   .main__masVendido {
     flex-direction: column; }
   h1 {
@@ -173,4 +171,5 @@ iframe {
       color: white; }
   .main {
     padding: 0px;
-    margin: 0px; } }
+    margin: 0px;
+    margin-top: 50px; } }
