@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+html {
+  -webkit-text-size-adjust: 100%; }
+
 body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -166,6 +169,8 @@ iframe {
     width: 95%;
     right: 0; }
     .table-dark b {
-      font-size: 2vw; }
+      font-size: 3vw;
+      color: white; }
   .main {
-    width: 98%; } }
+    padding: 0px;
+    margin: 0px; } }
