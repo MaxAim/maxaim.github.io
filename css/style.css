@@ -117,7 +117,7 @@ iframe {
     height: auto;
     z-index: -100;
     margin: 0;
-    background: url(img/bg.jpg) center center no-repeat;
+    background: url(../img/bg.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
