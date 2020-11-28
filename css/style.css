@@ -166,4 +166,6 @@ iframe {
     width: 95%;
     right: 0; }
     .table-dark b {
-      font-size: 2vw; } }
+      font-size: 2vw; }
+  .main {
+    width: 98%; } }
