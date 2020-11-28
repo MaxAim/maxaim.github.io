@@ -107,6 +107,21 @@ iframe {
 @media only screen and (max-width: 1039px) {
   .menu__desktop, .main__ofertas, .mobile__off {
     display: none; }
+  .image-hero-area {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    margin: 0;
+    background: url(img/bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   main {
     margin-top: 50px; }
   .main__masVendido {
