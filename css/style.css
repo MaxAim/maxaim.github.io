@@ -141,10 +141,12 @@ iframe {
     width: 90%; }
   input {
     display: block; }
+  .dropdown-menu.show {
+    display: grid; }
   .table-dark {
     position: relative;
-    width: 100%;
-    left: 1%; }
+    width: 95%;
+    right: 0; }
     .table-dark img {
       width: 50%; }
     .table-dark b {
