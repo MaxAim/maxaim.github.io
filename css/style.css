@@ -4,8 +4,8 @@
 html, body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  max-width: 98%;
-  margin-left: 1%; }
+  margin: 0;
+  padding: 0; }
 
 .background, .main__masVendido, .table-dark {
   background-color: rgba(0, 0, 0, 0.6);
@@ -118,6 +118,8 @@ iframe {
     height: 85%; }
   .dropdown-menu {
     background-color: black; }
+  .main__input {
+    width: 100%; }
   .menu__mobile {
     display: grid;
     grid-template-columns: 80% 20%;
