@@ -53,6 +53,8 @@ footer {
   border: black solid thick;
   background: grey;
   z-index: 10; }
+  .menu__desktop .menu__off {
+    color: darkblue; }
   .menu__desktop a {
     color: black;
     padding: 2% 0% 2% 3%;
@@ -72,9 +74,6 @@ legend, h1, h2, p, .white, nav {
 b, #yo {
   color: #bc002d;
   font-family: "Permanent Marker"; }
-
-.menu__off {
-  color: darkblue; }
 
 main {
   padding-top: 8%; }
