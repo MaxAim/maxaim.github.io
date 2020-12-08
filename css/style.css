@@ -152,8 +152,9 @@ iframe {
     height: 80px;
     border-radius: 1%; }
     .menu__mobile a {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       color: white;
+      margin: 10px 0 10px 20px;
       position: relative;
       float: left;
       font-family: "Poppins"; }
