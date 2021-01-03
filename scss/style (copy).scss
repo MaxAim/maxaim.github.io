@@ -1,0 +1,170 @@
+@import "variables.scss";
+
+html, body{
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    max-width: 98%;
+    margin-left: 1%;
+}
+.fondoBlanco, .main__masVendido, .table-dark{
+    background-color: $background-color;
+    border: $border;
+    font-family: $font-stack;
+    margin: 2%;
+    padding: 10px;
+    color: black;
+    width: auto;
+}
+ .table__producto{
+    color: white;
+    font-family: $special-font;
+    font-size: 1.5rem;
+    p{
+        color:black;
+        font-family: $font-stack;
+        font-size: 1rem;
+    }
+}
+.main__input{
+    display: block;
+    margin: 10px;
+    width: 70%;
+}
+.main__input--btn{
+    width: 10%;
+}
+th img, .table-dark, .main__ofertas--especial, footer{
+    width: 100%;
+}
+.main__masVendido, .menu__desktop{
+    display: flex;
+}
+.menu__desktop{
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: $font-stack;
+    position: fixed;
+    width: 97%;
+    top:0;
+    left: 1.5%;
+    overflow: no-display;
+    border: black solid thick;
+    background: grey;
+    z-index: 10;
+    a:hover{
+    color: white;
+    background-color: black;
+    }
+    divide{
+    width: 60%;
+    align-self: center;
+    }
+}
+h1 {
+    font-size: 1.9rem;
+    font-family: $special-font;
+    padding: 2% 1% 0 2%;
+}
+a{
+    color: black;
+    padding: 2% 4% 2% 4.25%;
+}
+legend, h1, h2, p, .table-dark p, .table-dark, .white, nav{
+    color: white;
+}
+b, #yo{
+    color: $flag-color;
+}
+.menu__off{
+    color: darkblue;
+}
+main{
+    padding-top: 8%;
+}
+.main__ofertas--especial{
+    position: relative;
+    left: 4%;
+}
+.main__ofertas{
+    position: relative;
+    right: 2%;
+    margin-top: 1.4%;
+}
+.menu__mobile, .none{
+    display:none;
+    width: 0px;
+    height: 0px;
+}
+th{
+    width: 20%;
+}
+fieldset p{
+    display: inline;
+}
+.table-dark{
+    position: relative;
+    right: 2%;
+}
+@media only screen and (max-width: 1024px) {
+    .menu__desktop{
+        display: none;
+    }
+    body{
+        margin-top: 15%;
+        margin-left: 2%;
+        max-width: 98%;
+    }
+    .main__ofertas{
+        display:none;
+    }
+    .main__masVendido{
+        flex-direction: column;
+    }
+    h1{
+        padding-top: 4%;
+        padding-left: 5%;
+    }
+    .table-dark{
+    width: 98%;
+    }
+    #dropdownMenuLink{
+        width: 90%;
+        height: 85%;
+
+    }
+    .dropdown-menu{
+        background-color: black;
+    }
+    .menu__mobile {
+        a{
+            font-size: 1.6rem;
+            color: white;
+            position: relative;
+            float: left;
+            font-family: $font-stack;
+        }
+        display: grid;
+        grid-template-columns: 80% 20%;
+        position: fixed;
+        top:0;
+        overflow: visible;
+        background-color: #333;
+        font-family: $special-font;
+        z-index: 10;
+        width: 94%;
+        height: 10%;
+    }
+    .main__input{
+        width: 90%;
+    }
+    td p{
+        display: none;
+    }
+    input{
+        display: block;
+    }
+    .table-dark{
+        position: relative;
+        right: 10%;
+    }
+}

@@ -1,0 +1,258 @@
+@import "variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+html{
+    -webkit-text-size-adjust: 100%;
+}
+body{
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+.background{
+    background-color: $background-color;
+    border: $border;
+    font-family: $font-stack;
+    margin: 2%;
+    padding: 10px;
+    color: black;
+    width: auto;
+}
+.main__masVendido{
+    @extend .background;
+    display: flex;
+}
+ .table__producto{
+    color: $base-color;
+    font-family: $special-font;
+    font-size: 1.5rem;
+    p{
+        font-family: $font-stack;
+        font-size: 1rem;
+    }
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.main__input{
+    display: block;
+    margin: 10px;
+    width: 70%;
+    .main__input--btn{
+        width: 10%;
+    }
+}
+footer{
+    img{
+        width: 100px;
+        border-radius: 10%;
+        margin-bottom: 3%;
+    }
+    p{
+        justify-content: center;
+        display: flex;
+    }
+}
+.menu__desktop{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: $font-stack;
+    position: fixed;
+    width: 97%;
+    top:2px;
+    left: 1.5%;
+    border: black solid thick;
+    background: grey;
+    z-index: 10;
+    .menu__off{
+        color: darkblue;
+    }
+    a{
+        color: black;
+        padding: 2% 0% 2% 3%;
+        flex-grow: 1; 
+    }
+    a:hover{
+    color: $base-color;
+    background-color: black;
+    }
+}
+h1 {
+    font-size: 1.9rem;
+    font-family: $special-font;
+    padding: 2%;
+}
+
+legend, h1, h2, p, .white{
+    color: $base-color;
+}
+b{
+    color: $flag-color;
+    font-family: $special-font;
+}
+i{
+    font-family: sans-serif;
+}
+main{
+    padding-top: 8%;
+    .main__ofertas{
+        position: relative;
+        right: 2%;
+        margin-top: 1.4%;
+        .main__ofertas--especial{
+            width: $full-width;
+            position: relative;
+        }
+    }
+}
+.menu__mobile, .mobile__on{
+    display: none;
+}
+fieldset{
+    width: $full-width;
+    p{
+        display: inline;
+    }
+    img{
+        height: 600px;
+    }
+}
+.table-dark{
+    @extend .background;
+    position: relative;
+    color:$base-color;
+    width: 96%;
+    th{
+        width: 20%;
+        img{
+            width: $full-width;
+        }
+    }
+}
+iframe{
+    margin: 20px;
+    height: 360px;
+    width: auto;
+}
+.accept{
+    margin: 4%;
+}
+#gcw_mainF5KndqjFc{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    
+}
+@media only screen and (max-width: 1039px) {
+    .menu__desktop, .main__ofertas, .mobile__off{
+        display: none;
+    }
+    main{
+        margin-top: 60px;
+    }
+    .image-hero-area {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        margin: 0;
+        background: url(../img/bg.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .main__masVendido{
+        flex-direction: column;
+    }
+    h1{
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+    #dropdownMenuLink{
+        width: 150%;
+        height: 58%;
+        right: 80%;
+        top: 8%;
+    }
+    .dropdown-menu{
+        background-color: black;
+    }
+    .main__input{
+        width: $full-width;
+    }
+    .menu__mobile {
+        a{
+            font-size: 1.2rem;
+            color: white;
+            margin: 10px 0 10px 20px;
+            position: relative;
+            float: left;
+            font-family: $font-stack;
+            
+        }
+        display: grid;
+        grid-template-columns: 80% 20%;
+        position: fixed;
+        top:0px;
+        left:0px;
+        overflow: visible;
+        background-color: #333;
+        font-family: $special-font;
+        z-index: 10;
+        width: 100%;
+        height: 80px;
+        border-radius: 1%;
+    }
+    .main__input{
+        width: 90%;
+    }
+    input{
+        display: block;
+    }
+    .dropdown-menu.show, .mobile__on{
+        display: grid;
+    }
+    .table-dark{
+        position: relative;
+        width: 95%;
+        right: 0;
+        b{
+            font-size: 3vw;
+            color: $base-color;
+        }
+    }
+    .main{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 80px;
+    }
+    #gcw_mainF5KndqjFc{
+        position: relative;
+        bottom: 0;
+        right: 2px;
+    }
+    footer{
+        p{
+            display: none;
+        }
+        img{
+            width: 50px;
+        }
+    }
+}

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Tienda ⬤ Ganjin - Contacto</title>
         <meta charset="UTF-8">
+        <meta name="description" content="La mejor tienda para comprar productos de anime, golosinas japonesas, cosplays y mas">
+        <meta name="keywords" content="alimentos japoneses,comida japonesa,tienda japonesa,productos japoneses,japón,japanese food, bebidas japonesas, dulces y snack japoneses, productos japoneses online, comprar productos japoneses, japon, japones, japonesa, coleccionismo, coleccionista, figuras, tienda, online, cosplay"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -21,7 +23,7 @@
             <a class="menu__off">Contacto</a>
         </header>
         <header class="menu__mobile">
-            <h1>Tienda <b>⬤</b>Ganjin</h1>
+            <h1>Tienda <b>⬤</b> Ganjin</h1>
             <div class="dropdown show">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">三</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -35,12 +37,15 @@
         </header>
         <main class="animate__animated animate__fadeIn">
             <form>
-                <fieldset class="background">
+                <fieldset class="background row">
                     <legend>Informacion personal</legend>
-                    <p>Nombre:</p><input type="text" name="contacto" class="main__input" placeholder="Nombre">
-                    <p>Direccion:</p><input type="text" class="main__input" placeholder="Direccion">
-                    <p>Telefono:</p><input type="text" class="main__input" placeholder="Telefono">
-                    <p>Informacion extra:</p><textarea name="extra" rows="20" class="main__input" placeholder="Informacion extra"></textarea>
+                    <div class="col-lg-6 col-12">
+                        <p>Nombre:</p><input type="text" name="contacto" class="main__input" placeholder="Nombre">
+                        <p>Direccion:</p><input type="text" class="main__input" placeholder="Direccion">
+                        <p>Telefono:</p><input type="text" class="main__input" placeholder="Telefono">
+                        <p>Informacion extra:</p><textarea name="extra" rows="12" class="main__input" placeholder="Informacion extra"></textarea>
+                    </div>
+                    <img src="img/contacto.png" class="mobile__off">
                 </fieldset>
                 <fieldset class="background full-width">
                     <legend>Forma de pago</legend>
@@ -51,20 +56,27 @@
                 </fieldset>
                 <fieldset class="background full-width">
                     <legend>Confirmar</legend>
-                    <p>Acepto las condicones</p><input type="checkbox" value="0">
-                    <p>Quiero recibir el newsletter</p><input type="checkbox" value="1">
-                    <input type="reset" value="Limpiar" class="main__input main__input--btn">
-                    <input type="submit" value="  Enviar   " class="main__input main__input--btn">
+                    <p>Acepto las condiciones </p><input type="checkbox" value="0">
+                    <p>Quiero recibir el newsletter </p><input type="checkbox" value="1">
+                    <input type="reset" value="Limpiar" class="main__input main__input--btn col-lg-2">
+                    <input type="submit" value="  Enviar   " class="main__input main__input--btn col-lg-2">
                 </fieldset>
             </form>
         </main>
-        <footer class="background">
-            <h2>Info del sitio</h2>
-            <nav>Facebook</nav>
-            <nav>Instagram</nav>
-            <nav>Youtube</nav>
-            <nav>Twitter</nav>
-            <p id="yo">Cañibano Facundo</p>
+        <footer class="background animate__animated animate__fadeIn container col-12">
+            <h2>Nuestras Redes</h2>
+            <div class="d-flex justify-content-around">
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Youtube</p>
+                <p>Twitter</p>
+            </div>
+            <div class="d-flex justify-content-around">
+                <img src="img/facebook.png">
+                <img src="img/instagram.png">
+                <img src="img/youtube.png">
+                <img src="img/twitter.png">
+            </div>
         </footer>
     </main>
 </body>
