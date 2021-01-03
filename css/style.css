@@ -158,9 +158,11 @@ iframe {
   .main__masVendido {
     flex-direction: column; }
   h1 {
-    padding-top: 20px;
+    padding-top: 23px;
     padding-left: 5%;
     font-size: 1.6rem; }
+  h2 {
+    font-size: 2rem; }
   #dropdownMenuLink {
     width: 150%;
     height: 58%;
