@@ -159,7 +159,8 @@ iframe {
     flex-direction: column; }
   h1 {
     padding-top: 20px;
-    padding-left: 5%; }
+    padding-left: 5%;
+    font-size: 1.6rem; }
   #dropdownMenuLink {
     width: 150%;
     height: 58%;
