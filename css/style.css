@@ -198,7 +198,7 @@ iframe {
       float: left;
       font-family: "Poppins"; }
   .main__input {
-    width: 90%; }
+    width: 94%; }
   input {
     display: block; }
   .dropdown-menu.show, .mobile__on {
@@ -223,6 +223,6 @@ iframe {
   footer img {
     width: 50px; }
   iframe, .envios {
-    height: 240px;
+    height: auto;
     margin: 0;
     margin-bottom: 20px; } }
