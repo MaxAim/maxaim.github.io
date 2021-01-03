@@ -32,11 +32,13 @@ body {
     font-family: "Poppins";
     font-size: 1rem; }
 
-h2 {
+h3, h2 {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
-  margin: 20px;
+  margin: 20px; }
+
+h2 {
   margin-bottom: 40px; }
 
 .main__input {
@@ -49,7 +51,7 @@ h2 {
 footer img {
   width: 100px;
   border-radius: 10%;
-  margin-bottom: 3%; }
+  margin-bottom: 30px; }
 
 footer p {
   justify-content: center;
@@ -82,7 +84,7 @@ h1 {
   font-family: "Permanent Marker";
   padding: 2%; }
 
-legend, h1, h2, p, .white {
+legend, h1, h2, h3, h2, p, .white {
   color: white; }
 
 b {
@@ -90,7 +92,8 @@ b {
   font-family: "Permanent Marker"; }
 
 i {
-  font-family: sans-serif; }
+  font-family: "Permanent Marker";
+  font-weight: 900; }
 
 main {
   padding-top: 8%; }
@@ -216,4 +219,6 @@ iframe {
   footer p {
     display: none; }
   footer img {
-    width: 50px; } }
+    width: 50px; }
+  iframe {
+    height: 180px; } }
