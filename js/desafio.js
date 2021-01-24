@@ -15,12 +15,15 @@ var kracie = new producto("Kracie Popin’ Cookin' Animal Pancake", 490, "Unico"
 var kracie2 = new producto("Kracie Popin' Cookin' Ice Cream Cake ", 460, "Unico", "Comida", "8")
 var kimetsu3 = new producto("Nendoroid Nezuko Kamado", 6000, "Unico", "Nendroid", "9")
 var jojo = new producto("Llavero mascara JoJo", 600, "Unico", "Llavero", "10")
+var list = [0, kimetsu, kimetsu2, onePiece, onePiece2, onePiece3, pocky, kracie, kracie2, kimetsu3, jojo]
+var carrito = []
 var total = 0
-list = [0, kimetsu, kimetsu2, onePiece, onePiece2, onePiece3, pocky, kracie, kracie2, kimetsu3, jojo]
+
 function add(id){
-	console.log("Se agrego el producto " + list[id].nombre)
 	total = total + list[id].precio
+	carrito.push(list[id].nombre)
 }
 function calcular(){
-	console.log("El total seria de ¥" + total)
+	var final = (carrito.join("\n\n"))
+	alert(final + "\n\n" + "El total seria de ¥" + total)
 }
