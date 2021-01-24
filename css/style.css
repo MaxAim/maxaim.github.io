@@ -32,6 +32,9 @@ body {
     font-family: "Poppins";
     font-size: 1rem; }
 
+button:hover {
+  background-color: lightblue; }
+
 h3, h2 {
   color: white;
   display: flex;
