@@ -19,6 +19,7 @@ var list = [0, kimetsu, kimetsu2, onePiece, onePiece2, onePiece3, pocky, kracie,
 var carrito = []
 var total = 0
 var storage = localStorage
+var crt = ""
 
 function add(id){
 	if(id in storage){
@@ -27,8 +28,14 @@ function add(id){
 	else{
 		storage.setItem(id, 1);
 	}
-	var btn = document.getElementById("btn-" + id);
-	btn.innerHTML = "Agregar(" + parseInt(storage[id]) + " en carrito)";
+	enCarrito()
+}
+
+function enCarrito(){
+	for (const [key, value] of Object.entries(storage)){
+		var btn = document.getElementById("btn-" + key);
+		btn.innerHTML = "Agregar(" + parseInt(storage[key]) + " en carrito)";
+	}
 }
 
 function calcular(){
@@ -36,34 +43,23 @@ function calcular(){
 		carrito.push(list[key].nombre + " x" + storage[key]);
 	}
 	for (const [key, value] of Object.entries(storage)){
-		sub = parseInt(list[key].precio * storage[key])
+		sub = parseInt(list[key].precio * storage[key]);
 		total = total + sub;
 	}
 	final = (carrito.join("<br>"))
 	var crt = document.getElementById("crt");
-	crt.innerHTML = final
-	var ttl = document.getElementById("ttl");
-	ttl.innerHTML = "El total seria de ¥" + total
+	if(final !== ""){
+		crt.innerHTML = final
+	}
+	else{
+		crt.innerHTML = "Nada Aun"
+	}
+	$("#ttl").text("El total seria de ¥" + total)
 	carrito = []
 	total = 0
 }
 
 function vaciar(){
 	localStorage.clear()
-	crt.innerHTML = "Nada aun"
-	ttl.innerHTML = "El total seria de ¥0"
-	for (var i = list.length - 1; i > 0; i--) {
-		btn = document.getElementById("btn-" + [i])
-		btn.innerHTML = "Agregar"
-	}
+	$(".table button").text("Agregar")
 }
-
-
-//	final = (carrito.join("\n\n"))
-//	var ctr = document.getElementById(htmlcarrito)
-//	ctr.innerHTML = final + "\n\n"
-//	var ttl = document.getElementById(total)
-//	txtttl = "El total seria de ¥" + total
-//	ttl.innerHTML = txtttl
-//	total = 0
-//	carrito = []

@@ -12,24 +12,34 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <header class="menu__desktop">
             <h1>Tienda <b>⬤</b> Ganjin</h1>
             <a href="index.html">Inicio</a>
             <a href="productos.html">Productos</a>
-            <a href="envios.html">Envios</a>
+            <a href="envios.html">Envíos</a>
             <a href="info.html">Conocenos</a>
             <a class="menu__off">Contacto</a>
+            <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="calcular()" style="font-size: 1.5rem; padding-right: 15px; background-color: lightblue;">🛒</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="background animate__animated animate__fadeIn container col-12">
+                    <p>Los productos agregados son:</p>
+                    <p id="crt">Nada aun</p>
+                    <p id="ttl">El total seria de ¥0</p>
+                    <button onclick="vaciar()">Vaciar carrito</button> 
+                </div>
+            </div>
         </header>
         <header class="menu__mobile">
             <h1>Tienda <b>⬤</b> Ganjin</h1>
             <div class="dropdown show">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">三</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a href="index.html">Index</a>
+                    <a href="index.html">Inicio</a>
                     <a href="productos.html">Productos</a>
-                    <a href="envios.html">Envios</a>
+                    <a href="envios.html">Envíos</a>
                     <a href="info.html">Conocenos</a>
                 </div>
                 </div>
