@@ -8,12 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/desafio.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <header class="menu__desktop">
@@ -23,13 +23,14 @@
             <a href="envios.html">Envíos</a>
             <a href="info.html">Conocenos</a>
             <a class="menu__off">Contacto</a>
-            <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="calcular()" style="font-size: 1.5rem; padding-right: 15px; background-color: lightblue;">🛒</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="background animate__animated animate__fadeIn container col-12">
+            <a href="#" role="button" id="carrito-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🛒</a>
+            <div class="carrito-dropdown" aria-labelledby="dropdownMenuLink">
+                <div class="background animate__animated animate__fadeIn container">
                     <p>Los productos agregados son:</p>
                     <p id="crt">Nada aun</p>
                     <p id="ttl">El total seria de ¥0</p>
-                    <button onclick="vaciar()">Vaciar carrito</button> 
+                    <button onclick="vaciar()">Vaciar carrito</button>
+                    <button id="close">X</button>  
                 </div>
             </div>
         </header>

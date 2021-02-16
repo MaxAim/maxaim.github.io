@@ -31,6 +31,14 @@ function add(id){
 	enCarrito()
 }
 
+function vaciar(){
+	$(".table button").text("Agregar")
+	localStorage.clear()
+	$("#crt").text("Nada Aun")
+	$("#ttl").text("El total seria de ¥0")
+
+}
+
 function enCarrito(){
 	for (const [key, value] of Object.entries(storage)){
 		var btn = document.getElementById("btn-" + key);
@@ -38,28 +46,37 @@ function enCarrito(){
 	}
 }
 
-function calcular(){
-	for (const [key, value] of Object.entries(storage)){
-		carrito.push(list[key].nombre + " x" + storage[key]);
-	}
-	for (const [key, value] of Object.entries(storage)){
-		sub = parseInt(list[key].precio * storage[key]);
-		total = total + sub;
-	}
-	final = (carrito.join("<br>"))
-	var crt = document.getElementById("crt");
-	if(final !== ""){
-		crt.innerHTML = final
-	}
-	else{
-		crt.innerHTML = "Nada Aun"
-	}
-	$("#ttl").text("El total seria de ¥" + total)
-	carrito = []
-	total = 0
-}
-
-function vaciar(){
-	localStorage.clear()
-	$(".table button").text("Agregar")
-}
+$(function(){
+	$("#carrito-dropdown").on({
+	  	mouseenter: function(){
+	    	$(this).css("background-color", "lightgray");
+	},
+		mouseleave: function(){
+	   		$(this).css("background-color", "lightblue");
+			},
+	  	click: function(){
+	    	for (const [key, value] of Object.entries(storage)){
+				carrito.push(list[key].nombre + " x" + storage[key]);
+			}
+			for (const [key, value] of Object.entries(storage)){
+				sub = parseInt(list[key].precio * storage[key])
+				total = total + sub;
+			}
+			final = (carrito.join("<br>"))
+			var crt = document.getElementById("crt");
+			if(final !== ""){
+				crt.innerHTML = final
+			}
+			else{
+				crt.innerHTML = "Nada Aun"
+			}
+			$("#ttl").text("El total seria de ¥" + total)
+			$(".carrito-dropdown").show();
+			$("#close").click(function(){
+				$(".carrito-dropdown").hide();
+			});
+			carrito = []
+			total = 0
+		},
+	})
+});

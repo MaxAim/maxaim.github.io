@@ -21,6 +21,14 @@ body {
   color: black;
   width: auto; }
 
+.carrito-dropdown{
+  display:none;
+  position: fixed;
+  right: 0;
+  top: 105px;
+  background-color: gray;
+}
+
 .main__masVendido {
   display: flex; }
 
@@ -142,6 +150,12 @@ iframe {
   bottom: 20px;
   right: 20px;
   z-index: 10; }
+
+#dropdownMenuLink{
+  font-size: 1.5rem;
+  padding-right: 15px; 
+  background-color: lightblue;
+}
 
 @media only screen and (max-width: 1039px) {
   .menu__desktop, .main__ofertas, .mobile__off {
