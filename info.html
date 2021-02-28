@@ -1,88 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <title>Tienda ⬤ Ganjin - Info</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="La mejor tienda para comprar productos de anime, golosinas japonesas, cosplays y mas">
-        <meta name="keywords" content="alimentos japoneses,comida japonesa,tienda japonesa,productos japoneses,japón,japanese food, bebidas japonesas, dulces y snack japoneses, productos japoneses online, comprar productos japoneses, japon, japones, japonesa, coleccionismo, coleccionista, figuras, tienda, online, cosplay"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/desafio.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <header class="menu__desktop">
-            <h1>Tienda <b>⬤</b> Ganjin</h1>
-            <a href="index.html">Inicio</a>
-            <a href="productos.html">Productos</a>
-            <a href="envios.html">Envíos</a>
-            <a class="menu__off">Conocenos</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="#" role="button" id="carrito-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🛒</a>
-            <div class="carrito-dropdown" aria-labelledby="dropdownMenuLink">
-                <div class="background animate__animated animate__fadeIn container">
-                    <p>Los productos agregados son:</p>
-                    <p id="crt">Nada aun</p>
-                    <p id="ttl">El total seria de ¥0</p>
-                    <button onclick="vaciar()">Vaciar carrito</button>
-                    <button id="close">X</button>  
+<main class="animate__animated animate__fadeIn">
+    <section class="background full-width">
+        <h2>Sobre nosotros</h2>
+        <div class="conteiner-fluid">
+            <div class="row">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7yLxxyzGiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-lg-5"></iframe>
+                <div class="col-lg-6 col-12">
+                    <p>Esta pagina fue creada porque <i>no se me ocurría nada en particular</i> para el <i>curso de Desarrollo Web</i> pero era necesario que eligiera algo medianamente coherente. Siendo este el caso decidí hacer una especie de tienda Online para cosas de anime y otros productos japoneses que son muy difíciles de conseguir de este lado del charco, dejando los precios en yen y dólar dependiendo de donde consiguiera cada uno.</p>
+                    <p>La idea en particular de una tienda de cosas importadas surgió del hecho del hecho que <i>es muy difícil comprar cosas directamente de japón sin saber japones.</i> Aprovechando que estoy aprendiendo japones por mi parte y que ya tengo el ingles para cuando el mismo sea suficiente, decidí hacer un sitio que, aunque quizás no ahora, podría utilizar para darle un uso comercial a mi conocimiento en idiomas y mi pasión por la cultura y arte japones. <i>Aquí adjunto un video de gatitos</i> por falta de video explicando algo de la tienda, igualmente valioso en mi opinión.</p>
                 </div>
             </div>
-        </header>
-        <header class="menu__mobile">
-            <h1>Tienda <b>⬤</b> Ganjin</h1>
-            <div class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">三</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a href="index.html">Inicio</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="envios.html">Envíos</a>
-                    <a href="contacto.html">Contacto</a>
-                </div>
-                </div>
-              </div>
-        </header>
-    <main class="animate__animated animate__fadeIn">
-        <section class="background full-width">
-            <h2>Sobre nosotros</h2>
-            <div class="conteiner-fluid">
-                <div class="row">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7yLxxyzGiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-lg-5"></iframe>
-                    <div class="col-lg-6 col-12">
-                        <p>Esta pagina fue creada porque <i>no se me ocurría nada en particular</i> para el <i>curso de Desarrollo Web</i> pero era necesario que eligiera algo medianamente coherente. Siendo este el caso decidí hacer una especie de tienda Online para cosas de anime y otros productos japoneses que son muy difíciles de conseguir de este lado del charco, dejando los precios en yen y dólar dependiendo de donde consiguiera cada uno.</p>
-                        <p>La idea en particular de una tienda de cosas importadas surgió del hecho del hecho que <i>es muy difícil comprar cosas directamente de japón sin saber japones.</i> Aprovechando que estoy aprendiendo japones por mi parte y que ya tengo el ingles para cuando el mismo sea suficiente, decidí hacer un sitio que, aunque quizás no ahora, podría utilizar para darle un uso comercial a mi conocimiento en idiomas y mi pasión por la cultura y arte japones. <i>Aquí adjunto un video de gatitos</i> por falta de video explicando algo de la tienda, igualmente valioso en mi opinión.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         </div>
-        <footer class="background animate__animated animate__fadeIn container col-12">
-            <h2>Nuestras Redes</h2>
-            </div>
-            <div class="d-flex justify-content-around">
-                <div class="column">
-                    <p>Facebook</p>
-                    <a href="https://www.facebook.com"><img src="img/facebook.png"></a>
-                </div>
-                <div class="column">
-                    <p>Instagram</p>
-                    <a href="https://www.instagram.com"><img src="img/instagram.png"></a>
-                </div>
-                <div class="column">
-                    <p>Twitter</p>
-                    <a href="https://www.twitter.com"><img src="img/twitter.png"></a>
-                </div>
-                <div class="column">
-                    <p>Youtube</p>
-                    <a href="https://www.youtube.com"><img src="img/youtube.png"></a>
-                </div>
-            </div>
-        </footer>
-    </main>
-</body>
-</html>
+    </section>
+    </div>
+</main>

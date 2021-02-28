@@ -81,13 +81,11 @@ footer p {
   border: black solid thick;
   background: grey;
   z-index: 10; }
-  .menu__desktop .menu__off {
-    color: darkblue; }
-  .menu__desktop a {
+  .menu__desktop a , #carrito-dropdown{
     color: black;
     padding: 2% 0% 2% 3%;
     flex-grow: 1; }
-  .menu__desktop a:hover {
+  .menu__desktop a:hover, #carrito-dropdown:hover {
     color: white;
     background-color: black; }
 
@@ -109,7 +107,7 @@ i {
   font-weight: 900; }
 
 main {
-  padding-top: 8%; }
+  padding-top: 4%; }
   main .main__ofertas {
     position: relative;
     right: 2%;
